@@ -15,7 +15,8 @@ The short version: **join a faction immediately.** Almost everything here — cr
 5. [Useful Info Screens (LCD Panels)](#5-useful-info-screens-lcd-panels)
 6. [Combat & Gear](#6-combat--gear)
 7. [Tatooine — Where You're Standing](#7-tatooine--where-youre-standing)
-8. [Quick-Start Checklist](#8-quick-start-checklist)
+8. [Seasons](#8-seasons)
+9. [Quick-Start Checklist](#9-quick-start-checklist)
 
 ---
 
@@ -61,6 +62,16 @@ The map is dotted with capture zones — your faction earns money and standing b
 3. **Place a Survival Kit** on that station.
 4. **Hold it.** As long as no rival faction shows up, your claim builds up over time until the zone flips to your faction.
 5. If another faction parks their own kit in the same zone while you're capturing, it goes **CONTESTED** — nobody makes progress until one side backs off.
+
+### Zone defenders — nothing is a free first capture
+
+Every zone starts out held by the **Independent Freedom Fighters**, not by nobody. The first time anyone tries to take a zone, they have to fight through whatever defenses the Freedom Fighters have stationed there before a capture can even begin.
+
+Zones aren't defended equally. The more valuable a zone's resources or strategic position on the planet, the heavier its defenses — a backwater zone might be lightly guarded, while a zone sitting on rich resources or a key chokepoint could be a serious fight. Scout before you commit.
+
+### Special event zones
+
+On top of the regular capture zones, **special event zones** can pop up anywhere on the map at random. They aren't always announced ahead of time, so you won't necessarily see one coming. Event zones come with their own special rules and challenges layered on top of the usual capture fight — treat any zone behaving unusually as a sign one might be active.
 
 ### Reading the map
 
@@ -178,7 +189,17 @@ A few things to know about living here:
 
 ---
 
-## 8. Quick-Start Checklist
+## 8. Seasons
+
+The galactic conquest runs in **seasons**, and each one has its own theme. While factions are out capturing territory, the season's theme drives what else is happening on the planet around you — a Death Star flyover, recurring Imperial Star Destroyer visits, a ground invasion event, or other set-piece happenings tied to that season's story. Expect the unexpected.
+
+New season details — theme, what's changing, what's coming — get posted in Discord a couple of weeks before launch, so you've got time to adapt and prepare instead of getting caught flat-footed.
+
+Most seasons also bring **new planets and territory** to fight over. We're adding new ground gradually as the server grows, upgrading and stabilizing things along the way so it can actually handle the expansion — the goal is to keep growing the war without breaking the experience for the people already fighting it.
+
+---
+
+## 9. Quick-Start Checklist
 
 - [ ] Grab your starter kit (automatic on first spawn)
 - [ ] Join or create a faction
