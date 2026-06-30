@@ -1,433 +1,682 @@
-# Valheim Custom Content — Complete Guide
-
-*A full reference for every weapon, piece of ammo, armor set, belt, cape, food, potion, creature, and raid event added by this mod.*
-
----
-
-## Table of Contents
-1. [Weapons](#weapons)
-2. [Ammo (Arrows)](#ammo-arrows)
-3. [Armor Sets](#armor-sets)
-4. [Belts](#belts)
-5. [Capes](#capes)
-6. [Food](#food)
-7. [Potions](#potions)
-8. [Creatures](#creatures)
-9. [Raid Events](#raid-events)
-
----
-
-## Weapons
-
-> Unless noted, these are unique named drops with **no crafting recipe** — they are loot, found on the listed creature's drop table. Items with a recipe say so explicitly. Flavor-text abilities (lightning chains, ignite, bleed, etc.) are written into the tooltip but are **not backed by coded status effects** in the data files — treat them as lore/flavor unless your modpack's compiled code says otherwise.
-
-### Swords
-
-| Weapon | Clone Base | Damage | Backstab | Knockback | Tool Tier | Notes |
-|---|---|---|---|---|---|---|
-| **Cinderfall** | SwordDyrnwyn | Slash 160, Fire 40 | x4 | 60 | 7 | Two-handed greatsword. "Forged in lava, quenched in nothing." Top-tier raw damage. |
-| **Draugr's Lament** | SwordIron | Slash 80 | x4 | 60 | 3 | "It drinks before you do." |
-| **Goldmane** | SwordSilver | Slash 90, Spirit 35 | x4 | 60 | 5 | Tooltip implies it grows stronger the less damage you've taken (untested/no coded effect). |
-| **Seeker's Edge** | SwordMistwalker | Slash 100, Frost 30 | x4 | 60 | 6 | Mistlands-tier, chitin-grown blade. |
-| **Thornbite** | (Sword) | Slash 60, Poison 15 | x4 | 60 | 1 | Early-tier poison-flavor sword. |
-
-### Knives / Dual-wield
-
-| Weapon | Clone Base | Damage | Backstab | Knockback | Tool Tier | Notes |
-|---|---|---|---|---|---|---|
-| **Ashclaw** | KnifeBlackMetal | Pierce 45, Slash 45, Fire 20 | x6 | 60 | 7 | Fast dual blades, SpeedFactor 0.2. |
-| **Voidfang** | (Knife) | Slash 40, Pierce 40 | **x10** | 60 | 6 | Highest backstab multiplier of any non-ammo weapon — built for the assassination playstyle. |
-| **Greydwarf Fang** | KnifeCopper | Pierce 22, Slash 22, Poison 20 | x4 | 60 | 2 | Early bleed/poison-flavor knife. |
-| **Widow's Needle** | (Knife) | Slash 12, Pierce 12 | x8 | 60 | 1 | Very low base damage but massive backstab scaling — pure stealth one-shot tool. |
-
-### Axes
-
-| Weapon | Clone Base | Damage | Backstab | Knockback | Tool Tier | Notes |
-|---|---|---|---|---|---|---|
-| **Avalanche** | AxeBlackMetal | Chop 80, Slash 120 | x4 | 140 | 4 | Two-handed greataxe, huge knockback. |
-| **Stagsplitter** | (Axe) | Chop 45, Slash 35 | x4 | 60 | 1 | Tooltip: bonus vs beasts. |
-| **Stormcaller** | (Axe) | Chop 70, Slash 110, Lightning 25 | x4 | 60 | 4 | Tooltip: chain lightning on crit. |
-| **Warchief's Cleaver** | (Axe) | Chop 55, Slash 50 | x4 | 60 | 2 | Tooltip: ramping chain damage. |
-| **Lumberjack's Axe** ⚙️ | AxeBlackMetal | Chop 100→+8/lvl, Slash 70→+5/lvl | x3 | 50 | 4 | **Craftable.** WoodCutting special hit type — best-in-slot for tree felling, weak in combat by design. |
-| **Woodsman's Axe** ⚙️ | AxeFlint | Chop 50→+5/lvl, Slash 14→+3/lvl | x3 | 40 | 1 | **Craftable**, early-game lumber axe. |
-
-### Maces / Hammers (Combat)
-
-| Weapon | Clone Base | Damage | Backstab | Knockback | Tool Tier | Notes |
-|---|---|---|---|---|---|---|
-| **Coresplitter** | MaceBronze | Blunt 65 | x4 | 60 | 2 | Early-mace, root/petrified theming. |
-| **Frostbreaker** | MaceEldner | Blunt 150, Frost 40 | x4 | 60 | 7 | Two-handed, top-tier Deep North mace. |
-| **Frostfang Maul** | MaceIron | Blunt 95, Frost 35 | x4 | 60 | 4 | Two-handed, mid-tier frost mace. |
-| **Warlord's Bulwark** | (Mace) | Blunt 80, Spirit 25 | x4 | 60 | 5 | Block power 50 — doubles as a heavy shield-mace for blockers. |
-
-### Spears / Polearms
-
-| Weapon | Clone Base | Damage | Backstab | Knockback | Tool Tier | Notes |
-|---|---|---|---|---|---|---|
-| **Boarspear** | SpearFlint | Pierce 35 | x4 | 110 | 1 | Tooltip: heavy knockback vs charging enemies. |
-| **Rootbinder** | SpearBronze | Pierce 55 | x4 | 60 | 2 | Early-mid tier spear. |
-| **Sunspear** | (Spear) | Pierce 95, Fire 30 | x4 | 60 | 5 | Tooltip: ignites on hit, bonus vs Fuling. |
-| **Wolfsbane** | (Spear) | Pierce 90, Frost 20 | x4 | 60 | 4 | Tooltip: bonus vs wolves. |
-| **Bog Reaper** ⚔️ | AtgeirIron | Pierce 85, Slash 20 | x4 | 60 | 3 | Two-handed atgeir. Tooltip: bonus vs undead. |
-| **Gjall's Roar** ⚔️ | AtgeirHimminAfl | Pierce 105, Lightning 35 | x4 | **150** | 6 | Two-handed, highest knockback of any melee weapon. |
-| **Mireheart** ⚔️ | AtgeirBronze | Pierce 70, Poison 25 | x4 | 60 | 3 | Two-handed, swamp-tier poison atgeir. |
-
-### Staves
-
-| Weapon | Clone Base | Damage | Backstab | Knockback | Tool Tier | Notes |
-|---|---|---|---|---|---|---|
-| **Mistveil** | StaffIceShards | Frost 55 | x4 | 60 | 6 | Two-handed Mistlands frost staff. |
-
-### Bows (Loot)
-
-| Weapon | Clone Base | Damage | Backstab | Knockback | Tool Tier | Projectile | Notes |
-|---|---|---|---|---|---|---|---|
-| **Deathweaver** | BowHuntsman | Pierce 55 | x4 | 60 | 5 | arrow_iron, Vel 14 | Tooltip: arrows pierce through targets. |
-| **Plaguebringer** | BowFineWood | Pierce 20, Poison 30 | x4 | 60 | 3 | arrow_iron, Vel 12 | Disease/rot-themed poison bow. |
-
-### Bows (Craftable Themed Set) ⚙️
-
-| Weapon | Damage | Per-Level | Knockback | Station | Recipe |
-|---|---|---|---|---|---|
-| **Tarstrider Bow** | Pierce 42, Poison 12 | +4 Pierce / +1 Poison | 5 | Workbench Lv2 | FineWood 10, Tar 8, LeatherScraps 4 |
-| **Stormbright Bow** | Pierce 36, Lightning 14 | +3 Pierce / +1 Lightning | 10 | Forge Lv3 | FineWood 10, Crystal 6, Silver 4 |
-| **Elderbough Bow** | Pierce 48 | +4 Pierce | 10 | Workbench Lv2 | ElderBark 10, FineWood 5, TrollHide 2 |
-| **Permafrost Bow** | Pierce 38, Frost 16 | +3 Pierce / +1 Frost | 10 | Forge Lv3 | FineWood 10, FreezeGland 4, Silver 4 |
-
-All four share: Draw duration 2.2–2.5s, Stamina drain 7–8 per shot, Velocity ~50–55, max quality 4 (upgradeable 1–4★). This is the mod's signature progressive bow line — one craftable elemental option per major biome tier (Swamp tar → Mountain crystal → Black Forest wood → Mountain frost).
-
-### Pickaxes ⚙️
-
-| Weapon | Damage | Per-Level | Tool Tier | Station | Recipe |
-|---|---|---|---|---|---|
-| **Pathfinder's Pickaxe** | Pickaxe 27, Pierce 9 | +4 / +1 | 0 | Workbench Lv1 | Wood 4, Stone 14, HardAntler 1 |
-| **Excavator's Pickaxe** | Pickaxe 80, Pierce 30 | +7 / +2 | 3 | Forge Lv2 | YggdrasilWood 4, BlackMetal 30 |
-
-### Runic Weapons (Runeforge) ⚙️
-
-All craft at the new **Runeforge** piece (cloned from Black Forge; built from BlackMetal 15, Eitr 15, SurtlingCore 5, Silver 10 — deliberately excludes Runic Steel to avoid a circular dependency, since Runic Steel itself now also crafts at the Runeforge instead of the Black Forge). Every weapon shares the same Fire+Frost elemental blend as the original Greatstaff, all craft at `minStationLevel 1`, and all use `material: stone` for a shared dark-stone visual.
-
-| Weapon | Type | Damage | Per-Level | Skill | Notes |
-|---|---|---|---|---|---|
-| **Runic Greatstaff** | Two-handed | Fire 70, Frost 70 | +4 / +4 | — | The original signature Runeforge weapon. |
-| **Runic Bow** | Ranged | Pierce 35, Fire 12, Frost 12 | +3 / +1 / +1 | Bows | Pairs with Runic Arrows. |
-| **Runic Sword** | One-handed | Slash 60, Fire 18, Frost 18 | +5 / +2 / +2 | Swords | |
-| **Runic Axe** | One-handed | Slash/Chop 65, Fire 18, Frost 18 | +4 (Chop) / +2 / +2 | Axes | Retains WoodCutting special hit type. |
-| **Runic Dagger** | One-handed | Pierce/Slash 38, Fire 14, Frost 14 | +2 / +1 / +1 | Knives | Backstab x7, 3-chain combo. |
-| **Runic Maul** | Two-handed | Blunt 75, Fire 25, Frost 25 | +6 / +3 / +3 | Clubs | Area attack type, highest knockback (220) of the set. |
-
-### Building Hammers ⚙️
-
-| Tool | Max Quality | Station | Recipe | Notes |
-|---|---|---|---|---|
-| **Journeyman's Hammer** | 4★ | Forge Lv1 | Wood 6, Bronze 10 | Extended durability for longer building sessions before repair. |
-| **Mastercraft Hammer** | 5★ | Forge Lv4 | FineWood 6, BlackMetal 20, LinenThread 5 | Highest durability reserve hammer in the mod. |
-
----
-
-## Ammo (Arrows)
-
-All arrows below are craftable. Hunter's Arrow is the dedicated **stealth** arrow (see noise/backstab columns); the others are **elemental/utility** arrows for specific matchups.
-
-| Arrow | Damage | Backstab | Start Noise | Hit Noise | Station | Recipe (yields 20) |
-|---|---|---|---|---|---|---|
-| **Hunter's Arrow** | Pierce 18 (no scaling) | **x9** | **3** (very quiet) | 0 | Workbench Lv1 | Wood 8, Flint 4, Feathers 4 |
-| **Bludgeon Arrow** | Blunt 34, Pierce 5 | x3 | 10 | 0 | Forge Lv1 | Wood 8, Bronze 3, Feathers 2 |
-| **Storm Arrow** | Lightning 38, Pierce 18 | x3 | 10 | 0 | Forge Lv2 | Wood 8, Iron 2, Coal 6, Feathers 2 |
-| **Wisp Arrow** | Pierce 38, Spirit 42 | x3 | 10 | 0 | Black Forge Lv1 | Wood 8, Mandible 4, Feathers 2 |
-| **Runic Arrow** | Pierce 22, Fire 35, Frost 35 | x3 | 10 | 0 | Runeforge Lv1 | Ammo companion to the Runic Bow; shares the Fire+Frost blend. |
-| **Tarbane Arrow** ☣️ | Pierce 30, Fire 20, Poison 35 | x3 | 10 | 0 | **Forge Lv4 (max)** | **Expensive, low-yield (8/craft):** BlackMetal 10, Silver 10, Obsidian 10, Tar 15, Ooze 8, Feathers 8, LinenThread 6 |
-
-**Tarbane Arrow** is the endgame debuff arrow: its Fire and Poison damage auto-trigger the normal burning/poisoned DOTs (same mechanism as vanilla Fire/Poison arrows), and it additionally applies the `SE_Tarbane` status effect on hit — a bundled "tarred" debuff giving **-30% move speed** and fire vulnerability for 6 seconds. It deliberately costs far more per shot than any other arrow in the mod (gated behind a fully upgraded Forge) since it stacks three effects (burn + poison + slow) in one hit.
-
-**Reading the noise stats:** lower `Attack_Start_Noise` means firing is less likely to alert nearby enemies. Hunter's Arrow at `3` vs. the vanilla Wood Arrow's `10` is ~70% quieter, designed purely for sneak-attack play — it trades raw/scaling damage (no Damage_Per_Level at all) for that 9x backstab multiplier, so it falls behind Wood Arrow on sustained DPS but excels at one-shotting unaware targets.
-
-Bludgeon Arrow's pure Blunt damage is the counter pick against skeletal/armored enemies that resist Pierce. Storm Arrow and Wisp Arrow add a secondary elemental damage type (Lightning / Spirit) on top of solid base Pierce — Wisp Arrow in particular is a high-tier Black Forge alternative to Silver Arrows for undead-heavy areas (Spirit 42 is its primary damage).
-
----
-
-## Armor Sets
-
-Two parallel progressive armor lines, each running **Bronze → Iron → Wolf**, both keyed to the Swords skill line. There is **no coded set-bonus** (no `m_setName`/`m_setSize` fields) — the "set" identity comes purely from matching stat philosophy across all three tiers of a line, not an engine bonus.
-
-### ⚡ Outrider Set — speed/skirmisher philosophy
-*Sacrifices coverage for mobility: positive movement bonus, reduced sneak/run stamina cost, lower armor-per-level.*
-
-| Piece | Armor | Per Lvl | Movement | Sneak Stam | Run Stam | Tool Tier | Station | Recipe |
-|---|---|---|---|---|---|---|---|---|
-| Outrider's Bronze (Helm/Chest/Legs) | 7 | +2 | +6% | -15% | -10% | 1 | Forge Lv1 | Bronze 7, DeerHide 2, Crystal 3 |
-| Outrider's Iron (Helm/Chest/Legs) | 12 | +2 | +6% | -15% | -10% | 2 | Forge Lv2 | Iron 28, DeerHide 2, WitheredBone 4 |
-| Outrider's Wolf (Chest/Legs **only**) | 17 | +2 | +6% | -15% | -10% | 3 | Forge Lv3 | Silver 30, WolfPelt 7, +Chain/WolfFang/TrophyWolf |
-
-### 🛡️ Warlord Set — heavy tank philosophy
-*Trades mobility for raw armor: flat -8% movement, no stamina discounts, ~1.6-1.7x the armor/durability of Outrider at matching tiers.*
-
-| Piece | Armor | Per Lvl | Movement | Tool Tier | Station | Recipe |
-|---|---|---|---|---|---|---|
-| Warlord's Bronze (Helm/Chest/Legs) | 12 | +3 | -8% | 1 | Forge Lv1 | Bronze 9, DeerHide 3, Crystal 5 |
-| Warlord's Iron (Helm/Chest/Legs) | 20 | +3 | -8% | 2 | Forge Lv2 | Iron 35, DeerHide 3, WitheredBone 6 |
-| Warlord's Wolf (Chest/Legs **only**) | 28 | +3 | -8% | 3 | Forge Lv3 | Silver 38, WolfPelt 10, +Chain/WolfFang/TrophyWolf |
-
-> Both sets stop at **3 pieces** for the Wolf tier (no helm) — pair with the matching themed Wolf Cape below to complete a 3-slot top-end loadout.
-
-### 🔮 Runic Sets — Battle Mage (heavy) / Spellblade (light)
-
-Both are full 3-piece sets (Helmet/Chest/Legs) craftable at the Runeforge, sharing the Fire+Frost theme of the Runic weapon line and using `material: stone`. They use the engine's real `SE_SET_Equip` set-bonus system (coded status effect on full set, not just shared stat philosophy).
-
-| Set | Philosophy | Set Bonus (`SE_RunicBattleMage` / `SE_RunicSpellblade`) |
-|---|---|---|
-| **Runic Battle Mage** (heavy) | Tankier, lower mobility | Eitr regen x1.3, ElementalMagic +15, BloodMagic +15, +10% Fire/Frost/Lightning/Spirit damage |
-| **Runic Spellblade** (light) | Lower armor, faster | Eitr regen x1.15, ElementalMagic +10, BloodMagic +10, +20% Fire/Frost/Spirit damage, +5% move speed |
-
-### 🖤 Tarcrow Set — stealth/bow hybrid
-
-A tar-blackened reskin of the Troll Leather set (`material: tar`), built for stealthy bow play. Mid-game tier — Workbench Lv3, tool tier 2, 600 durability.
-
-| Piece | Armor | Per Lvl | Notes |
-|---|---|---|---|
-| Tarcrow Helmet/Chest/Legs | 8 | +3 | Built-in -10% sneak stamina per piece; recipe: TrollHide, Tar, LeatherScraps/BoneFragments, Coal |
-
-**Set bonus** (`SetEffect_Tarcrow`, 3-piece): +35% stealth, -30% noise, -20% sneak stamina, +20% pierce damage (buffs bow/arrow damage), plus +10 Bows / +15 Sneak skill while worn. Pairs naturally with the Tarbane Arrow above.
-
----
-
-## Belts
-
-All belts: Utility slot, base Armor 10 (+1/lvl), m_toolTier 0. Their actual power comes from a linked status effect granted on equip. They form three clean **power-progression triads**:
-
-### 🏹 Archer Line (Bows)
-| Belt | Skill Bonus | Damage Bonus | Station | Recipe |
-|---|---|---|---|---|
-| Fledgling Archer's Belt | Bows +8 | — | Workbench Lv1 | LeatherScraps 6, DeerHide 2 |
-| Marksman's Belt | Bows +18 | — | Forge Lv3 | LeatherScraps 8, Bronze 4, Feathers 4 |
-| Sharpshooter's Belt | Bows +30 | +8% bow damage | Black Forge Lv1 | BlackMetal 6, LinenThread 4, Silver 4 |
-
-### ⚔️ Swordsman Line (Swords)
-| Belt | Skill Bonus | Damage Bonus | Station | Recipe |
-|---|---|---|---|---|
-| Duelist's Belt | Swords +8 | — | Workbench Lv1 | LeatherScraps 6, DeerHide 2 |
-| Blademaster's Belt | Swords +18 | +5% sword damage | Forge Lv3 | LeatherScraps 8, Bronze 4, LinenThread 2 |
-| Swordsaint's Belt | Swords +30 | +10% sword damage | Black Forge Lv1 | BlackMetal 6, LinenThread 4, Silver 4 |
-
-### 🛡️ Tank / Blocker Line
-| Belt | Block Stamina | Stagger | Flat Armor | Station | Recipe |
-|---|---|---|---|---|---|
-| Guardian's Belt | -10% | — | +5 | Workbench Lv1 | LeatherScraps 8, Wood 4 |
-| Bulwark Belt | -20% | -10% | +12 | Forge Lv3 | Iron 6, TrollHide 4 |
-| Aegis Belt | -30% | -20% | +20 | Black Forge Lv2 | BlackMetal 8, Carapace 6 |
-
----
-
-## Capes
-
-| Cape | Armor | Movement | Resistance | Special | Tool Tier | Station | Recipe |
-|---|---|---|---|---|---|---|---|
-| **Cape of the Wayfarer** | 3 (+1/lvl) | +8% | none | -15% run stamina | 1 | Workbench Lv2 | LeatherScraps 6, DeerHide 4, Feathers 10, GreydwarfEye 10 |
-| **Outrider's Wolf Cape** | 1 (+1/lvl) | +4% | Frost: Resistant | — | 3 | Workbench Lv3 | WolfPelt 7, Silver 6, TrophyWolf 1 |
-| **Warlord's Wolf Cape** | 2 (+1/lvl) | none | Frost: Resistant | More armor/durability, "at the cost of grace" | 3 | Workbench Lv3 | WolfPelt 10, Silver 8, TrophyWolf 2 |
-| **Drakeskin Cloak** | 8 (+2/lvl) | -2% | Fire **and** Frost: Resistant | Dual elemental resist | 3 | Forge Lv3 | ScaleHide 10, DragonTear 2, Silver 10, LinenThread 5 |
-| **Mistwalker's Shroud** | 10 (+2/lvl) | — | Spirit: Resistant | -25% sneak stamina (best stealth cape) | 4 | Forge Lv4 | Carapace 10, Eitr 5, Softtissue 8 |
-
-The early-game **Wayfarer** is a pure exploration/speed cape; the **Wolf Capes** complete the Outrider/Warlord armor sets; **Drakeskin** and **Mistwalker** are endgame defensive specialists (dual-element resist vs. deep stealth utility, respectively).
-
----
-
-## Food
-
-| Dish | Health | Stamina | Eitr | Regen | Duration | Special Effect | Station / Recipe |
-|---|---|---|---|---|---|---|---|
-| Forager's Porridge | 22 | 65 | 0 | 2 | 1500s | — | Cauldron Lv1 — Raspberry 4, Honey 1, Dandelion 2 |
-| Deer Hunter's Stew | 40 | 50 | 0 | 3 | 1500s | — | Cauldron Lv1 — Deer Meat 2, Carrot 2, Onion 1 |
-| Honeyed Raspberries | 8 | 32 | 0 | 2 | 700s | Stamina regen x1.25 | Prep Table Lv1 — Raspberry 6, Honey 2 |
-| Honeycomb Trail Mix | 10 | 18 | 0 | 1 | 2400s | -20% sneak stamina, +10% stealth | Prep Table Lv1 — Blueberries 6, Honey 1 |
-| Honey Bread | 25 | 78 | 0 | 2 | 1700s | -20% tool stamina cost, +15% stamina regen | Prep Table Lv1 — Barley Flour 10, Honey 3 |
-| Hearty Mushroom Skewer | 35 | 15 | 0 | 2 | 1200s | — | Cauldron Lv1 — Neck Tail 1, Mushroom 2 |
-| Anglers' Chowder | 60 | 35 | 0 | 3 | 1500s | — | Cauldron Lv2 — Fish Cooked 3, Onion 2, Honey 1 |
-| Black Bear Stew | 75 | 35 | 0 | 4 | 1700s | — | Cauldron Lv2 — Cooked Black Bear Meat 2, Mushroom 2, Honey 1 |
-| Frostmarrow Stew | 80 | 45 | 0 | 3 | 1800s | Health regen x1.4, stamina regen x1.1, **frost dmg -60%** | Cauldron Lv2 — Frost Marrow 1, Turnip 2, Cooked Meat 1 |
-| Honey-Glazed Boar Skewer | 85 | 30 | 0 | 5 | 1800s | -15% run stamina | Cauldron Lv2 — Raw Meat 2, Honey 2, Thistle 1 |
-| Honey Mead Stew | 55 | 20 | 15 | 3 | 1600s | Eitr regen x1.3 | Cauldron Lv2 — Cooked Deer Meat 1, Honey 3, Carrot 1 |
-| Polar Bear Hotpot | 80 | 30 | 0 | 4 | 1700s | +20% heat resistance | Cauldron Lv2 — Cooked Polar Bear Meat 2, Honey 2, Thistle 1 |
-| Resin-Glazed Boar Ribs | 50 | 25 | 0 | 3 | 1500s | — | Cauldron Lv2 — Raw Meat 2, Resin 3, Honey 1 |
-| Voidmist Ragout | 70 | 40 | 25 | 3 | 1800s | Eitr regen x1.5, **noise -30%**, stealth +20%, move +5%, poison -30% | Cauldron Lv2 — Void Ichor 1, Mushroom 2, Carapace 1 |
-| Roe Tart | 50 | 70 | 0 | 3 | 1500s | — | Cauldron Lv3 — Fish2 2, Fish6 2, Fish9 2, Barley Flour 2 |
-| Smoked Catch Platter | 80 | 50 | 0 | 4 | 1800s | — | Cauldron Lv3 — Fish1 1, Fish5 1, Fish8 1, Honey 2 |
-| Dragon's Breakfast | **120** | 65 | 0 | 5 | 3000s | Health regen x1.5, stamina x1.2, **fire dmg -50%** | Cauldron Lv3 — Dragon Egg 1, Cooked Bear/Lox Meats |
-| Spiced Honey Cake | 70 | 60 | 20 | 5 | 2000s | All regen x1.1, -15% jump stamina | Cauldron Lv3 — Barley Flour 6, Honey 4, Blueberries 4, Magecap 1 |
-| Deep Sea Bisque | 85 | 55 | 20 | 4 | 1800s | — | Cauldron Lv4 — Raw Angler Fish 1, Magecap 1, Carrot 2 |
-| Fisherman's Feast | **115** | **100** | 10 | 6 | 2400s | — | Cauldron Lv5 — one of every fish type + Honey 3 |
-
-**Raw/cooked meats** (Black Bear Meat, Polar Bear Meat, and their cooked forms) are mob drops/campfire-cooked, not Recipe-craftable — they exist as cooking ingredients for the stews/hotpots above.
-
-**Standouts:** Fisherman's Feast is the single highest-value food (Stamina 100); Dragon's Breakfast is the highest Health food and grants the best fire mitigation; Frostmarrow Stew and Cinderheart/Stormcaller potions cover frost/fire/lightning resistance as a matched trio with Voidmist Ragout covering poison + stealth.
-
----
-
-## Potions
-
-All potions: Category Potion, RepeatInterval 60s (effect re-applies every 60s while active).
-
-| Potion | Effect | Duration | Cooldown | Station / Recipe |
-|---|---|---|---|---|
-| **Adept's Elixir** | **All weapon/tool skills +12**, +5% attack damage | 120s | 480s | Black Forge Lv2 — Mandible 4, BlackMetal 3, Honey 3 |
-| **Potion of the Prospector** | Pickaxes skill +15 | 90s | 300s | Cauldron Lv1 — Mushroom 8, Coal 4, Honey 1 |
-| **Veteran's Potion** | Swords +20, Blocking +20, +5% sword damage | 120s | 420s | Forge Lv2 — Yellow Mushroom 6, Iron 3, Honey 2 |
-| **Potion of the Woodsman** | Axes skill +15 | 90s | 300s | Cauldron Lv1 — Mushroom 8, Resin 6, Honey 1 |
-| **Cinderheart Draught** | Fire dmg -60%, Frost dmg -20% | 120s | 300s | Cauldron Lv2 — Cinder Heart 1, Honey 2, Cooked Meat 1 |
-| **Stormcaller's Brew** | Lightning dmg -60%, +10% move speed, +10% stamina regen | 120s | 300s | Cauldron Lv2 — Storm Core 1, Honey 2, Vulture Feather 2 |
-
-The skill potions cleanly split into single-skill boosts (Prospector/Woodsman +15) vs. multi-skill (Veteran: Swords+Block) vs. universal (Adept's Elixir: everything). The two elemental-resist brews are crafted from boss-tier monster drops (Ember Jarl's Cinder Heart, Storm Volture's Storm Core).
-
----
-
-## Creatures
-
-35 custom creatures across every biome. None are flagged as bosses (no boss music/HUD). Drop chance defaults to **100%** when no `chance` field is listed.
-
-### Meadows
-| Creature | Clone Base | HP | Resistances/Weaknesses | Drops |
-|---|---|---|---|---|
-| Elite Bear | Bjorn | 320 | Blunt/Pierce Resist, Chop/Pickaxe Ignore, Fire Weak, Spirit Immune | BjornHide 2-4, BlackBearMeat 2-3, BjornPaw 1-2, **Thornbite 5%** |
-| Elite Neck | Neck | 60 | Chop/Pickaxe Ignore, Fire Weak, Spirit Immune | NeckTail 1-2, **Widow's Needle 7%** |
-| Elite Stag | Deer | 80 | Chop/Pickaxe Ignore, Spirit Immune | DeerHide 2-3, DeerMeat 1-2, **Stagsplitter 6%** |
-| Elite Boar | Boar | 100 | Chop/Pickaxe Ignore, Spirit Immune | BoarMeat 1-3, **Boarspear 6%** |
-
-### Black Forest
-| Creature | Clone Base | HP | Resistances/Weaknesses | Drops |
-|---|---|---|---|---|
-| Mosquito | Deathsquito | 8 | Chop/Pickaxe Ignore, Spirit Immune | Ooze 20% |
-| Forest Spider | Seeker | 90 | Blunt/Slash/Pierce Resist, Spirit Immune | Resin 1-2, GreydwarfEye 30% |
-| Skeleton Champion | Skeleton | 180 | Blunt Weak, Pierce Resist, Fire Weak, Frost Resist, Poison Immune | BoneFragments 2-4, **Coresplitter 6%** |
-| Greyling Elder | Greyling | 90 | Fire VeryWeak, Poison Resist, Spirit Immune | Wood 1-3, **Rootbinder 6%** |
-| Greydwarf Warchief | Greydwarf_Elite | 240 | Fire VeryWeak, Poison Resist, Spirit Immune | Wood 4-8, GreydwarfEye 60%, **Warchief's Cleaver 5%** |
-| Greydwarf Shaman Elite | Greydwarf_Shaman | 150 | Fire VeryWeak, Poison Resist, Spirit Immune | Wood 2-5, GreydwarfEye 50%, **Greydwarf Fang 5%** |
-| Stalker | Wolf | 50 | Spirit Immune | WolfPelt 1-2, WolfFang 50%, WolfMeat 1-2 |
-| Crimson Troll | Troll | 1600 | Blunt Resist, Pierce Weak, Spirit Immune | TrollHide 5-8, Coins 40-80, Wood 10-20 |
-
-### Swamp
-| Creature | Clone Base | HP | Resistances/Weaknesses | Drops |
-|---|---|---|---|---|
-| Draugr Revenant | Draugr_Elite | 280 | Fire Resist, Poison Immune | Entrails 1-3, IronScrap 30%, **Mireheart 4%** |
-| Bog Skeleton | Skeleton_Poison | 180 | Blunt Weak, Pierce Resist, Fire Weak, Frost Resist, Poison Immune | BoneFragments 2-4, Ooze 50%, **Bog Reaper 6%** |
-| Mire Abomination | Abomination | 700 | Blunt/Pierce Resist+, Fire Weak, Frost/Poison/Spirit Immune | Ooze 2-4, Wood 4-8, **Plaguebringer 5%** |
-| Draugr Archer Captain | Draugr_Ranged | 160 | Fire Resist, Poison Immune | Entrails 1-2, **Draugr's Lament 6%** |
-| Mire Bear | Bjorn | 450 | Blunt/Pierce Resist, Fire Weak, Frost Resist, Spirit Immune | BjornHide 2-4, Ooze 2-4, Iron 25%, BjornPaw 40% |
-
-### Mountain
-| Creature | Clone Base | HP | Resistances/Weaknesses | Drops |
-|---|---|---|---|---|
-| Storm Volture | Volture | 150 | Frost Weak, Poison Immune | VultureFeather 2-4, **Stormcaller 5%**, StormCore 25% |
-| Frostfang Alpha | Wolf | 260 | Spirit Immune | WolfPelt 2-3, WolfFang 70%, WolfMeat 1-2, **Frostfang Maul 4%** |
-| Rockslide Golem | StoneGolem | 900 | Slash/Pierce Resist, Pickaxe VeryWeak, Fire/Frost/Poison/Spirit Immune | Stone 4-8, **Avalanche 5%** |
-| Polar Bear | Bjorn | 350 | Blunt/Pierce Resist, Fire Weak, Frost Resist, Spirit Immune | BjornHide 2-3, PolarBearMeat 1-2, FreezeGland 40%, BjornPaw 40% |
-| Snow Troll | Troll | 1500 | Blunt Resist, Pierce Weak, Spirit Immune | TrollHide 5-8, Coins 30-60, FreezeGland 40% |
-| Ulv Packleader | Ulv | 280 | Fire VeryResistant, Poison Weak | WolfPelt 2-3, WolfFang 50%, **Wolfsbane 5%** |
-
-### Plains
-| Creature | Clone Base | HP | Resistances/Weaknesses | Drops |
-|---|---|---|---|---|
-| Fuling Warlord | GoblinBrute | 320 | Spirit Immune | Needle 30%, Coins 20-40, **Sunspear 4%** |
-| Fuling Deadeye | GoblinArcher | 140 | Spirit Immune | Needle 30%, **Deathweaver 6%** |
-| Fuling Shaman Elder | GoblinShaman | 160 | Spirit Immune | Needle 30%, **Goldmane 6%** |
-| Plains Lox Alpha | Lox | 1300 | (inherits vanilla Lox) | LoxPelt 2-4, LoxMeat 2-4, **Warlord's Bulwark 5%** |
-
-### Mistlands
-| Creature | Clone Base | HP | Resistances/Weaknesses | Drops |
-|---|---|---|---|---|
-| Seeker Matriarch | SeekerBrute | 360 | Blunt/Slash/Pierce Resist, Spirit Immune | Carapace 2-4, SeekerAspic 40%, **Voidfang 4%**, VoidIchor 25% |
-| Mist Stalker | Seeker | 220 | Blunt/Slash/Pierce Resist, Spirit Immune | Carapace 1-3, **Mistveil 5%** |
-| Giant Tick | Tick | 130 | Pierce Weak, Spirit Immune | Carapace 1-2, **Seeker's Edge 6%** |
-| Young Gjall | Gjall | 500 | Fire Resist, Spirit Immune | Carapace 2-4, **Gjall's Roar 5%** |
-
-### Ashlands
-| Creature | Clone Base | HP | Resistances/Weaknesses | Drops |
-|---|---|---|---|---|
-| Ember Jarl | Charred_Melee | 400 | Pierce Resist, Fire VeryResist, Poison Immune, Spirit Weak | CharredBone 2-4, Flametal 30%, **Cinderfall 4%**, CinderHeart 25% |
-| Ashclaw Twitcher | Charred_Twitcher | 200 | Pierce Resist, Fire VeryResist, Poison Immune, Spirit Weak | CharredBone 1-3, **Ashclaw 6%** |
-
-### Deep North
-| Creature | Clone Base | HP | Resistances/Weaknesses | Drops |
-|---|---|---|---|---|
-| Rime Wraith | Fenring | 400 | Fire Weak, Poison Resist | FenringClaw 1-2, LinenThread 30%, **Frostbreaker 5%**, FrostMarrow 25% |
-
-### Ocean
-| Creature | Clone Base | HP | Resistances/Weaknesses | Drops |
-|---|---|---|---|---|
-| King Serpent | Serpent | **1900** | Fire Immune, Frost Weak, Poison Resist, Spirit Immune | SerpentMeat 4-7, SerpentScale 4-7, Coins 30-60, Silver 30% |
-
-**Tankiest:** King Serpent (1900 HP) > Snow/Crimson Troll (~1500-1600) > Plains Lox Alpha (1300) > Rockslide Golem (900).
-**Squishiest:** Mosquito (8 HP), Stalker (50 HP), Elite Neck (60 HP).
-Every named-weapon drop sits in the 4-7% range — rare but not grindless.
-
----
-
-## Raid Events
-
-All raids are MDB-driven timed events: they trigger near a player's base, last a fixed duration, and pause if no player is in range. `standaloneChance` is the % chance the raid fires on its own interval timer (independent of base-attack triggers).
-
-> **Updated (rarity pass):** raids were firing far too often, so every `standaloneInterval`/`standaloneChance` below was retuned — longer intervals and roughly half the previous trigger chance — while keeping the same relative rarity ordering between early/mid/end-game events.
-
-| Raid | Biome | Requires | Duration | Standalone (chance / interval) | Theme |
-|---|---|---|---|---|---|
-| **DeerHerd** | Meadows | *none* | 90s | 35% / 1800s | Peaceful event — a deer herd wanders in (no combat; a hunting opportunity, not an attack). |
-| **GreydwarfHorde** | Meadows | *none* | 60s | 30% / 2200s | Earliest combat raid — open to all new players. |
-| **BoneArmy** | Black Forest | defeated_eikthyr | 60s | 25% / 2400s | Undead night-only crypt swarm. |
-| **WolfpackSiege** | Mountain | defeated_bonemass | 75s | 22% / 2700s | Wolves + elites; night-skewed. |
-| **PolarBearBlizzard** | Mountain | defeated_bonemass | 75s | 20% / 2700s | Forces SnowStorm environment; bear-only waves. |
-| **BogUprising** | Swamp | defeated_gdking | 75s | 22% / 2700s | Draugr horde + casters. |
-| **PlainsWarhost** | Plains | defeated_dragon | 90s | 18% / 3600s | Fuling war party with named elites. |
-| **MistlandsConvergence** | Mistlands | defeated_goblinking | 90s | 18% / 3600s | Seeker swarm escalating to a Matriarch. |
-
-### DeerHerd
-*"A herd of deer wanders nearby..." → "The herd has moved on."* Peaceful event, day only.
-- Deer: max 8, interval 8s, 100% chance, group 5-8
-
-### GreydwarfHorde
-*"The forest is moving..." → "The forest is calm again."*
-- Greydwarfs: max 6, interval 10s, 100% chance, group 4-6, day+night
-- Necks: max 3, interval 15s, 50% chance, group 1-2
-- Shaman: max 1, interval 20s, 40% chance
-- Elite Shaman: max 1, interval 30s, **15% chance** (mini-boss wave)
-
-### BoneArmy
-*"The dead are rising from the crypts..." → "The bones settle."* Night only.
-- Skeletons: max 6, interval 10s, 100%, group 4-6
-- Poison Skeletons: max 2, interval 15s, 40%, group 1-2
-- Bog Guardian (BogSkeleton): max 1, interval 30s, 20%
-
-### WolfpackSiege
-*"Howls echo through the peaks..." → "The howling fades."*
-- Wolves: max 6, interval 10s, 100%, group 4-6
-- Fenring: max 2, interval 20s, 30%, group 1-2
-- Ulv Packleader: max 1, interval 30s, 25%
-- Frostfang Alpha: max 1, interval 40s, **15%** (capstone)
-
-### PolarBearBlizzard
-*"A blizzard rolls in out of nowhere..." → "The blizzard breaks."* Forces SnowStorm weather for the duration.
-- Bears (first wave): max 4, interval 15s, 100%, group 2-3
-- Bears (second wave): max 2, interval 35s, 50%, group 1-2
-
-### BogUprising
-*"Something foul stirs in the bog..." → "The bog falls silent."*
-- Draugr: max 6, interval 10s, 100%, group 4-6
-- Blobs: max 3, interval 15s, 40%, group 1-2
-- Archer Captain: max 1, interval 25s, 25%
-- Revenant: max 1, interval 40s, **15%** (capstone)
-
-### PlainsWarhost
-*"A Fuling warhost marches on your halls..." → "The warhost is broken."*
-- Goblin Archers: max 5, interval 10s, 100%, group 3-5
-- Goblin Brutes: max 3, interval 15s, 50%, group 1-2
-- Shaman Elder: max 1, interval 25s, 20%
-- Deadeye: max 1, interval 25s, 20%
-- Warlord: max 1, interval 45s, **10%** (capstone)
-
-### MistlandsConvergence
-*"The mist thickens. Something vast is converging..." → "The mist recedes."*
-- Seekers: max 5, interval 10s, 100%, group 3-5
-- Seeker Brutes: max 2, interval 20s, 35%, group 1-2
-- Giant Tick: max 1, interval 25s, 20%
-- Young Gjall: max 1, interval 35s, 18%
-- Seeker Matriarch: max 1, interval 50s, **12%** (capstone)
-
-**Pattern across all raids:** each event opens with a guaranteed, high-volume "trash" wave (100% spawn chance), layers in 1-2 mid-tier "elite" waves at 20-50% chance, and caps off with a single named/mini-boss spawn at 10-25% chance and the longest spawn interval — giving players a clear escalation curve to fight through during the event window.
+Valheim Custom Content — Complete Reference
+Every custom item, food, armor set, belt, potion, and creature, with full recipes and drop tables.
+
+Contents
+1. Weapons & Tools
+2. Legendary Weapons
+3. Armor Sets
+4. Capes
+5. Belts
+6. Potions
+7. Food & Cooking
+8. Elite & New Creatures (Drop Tables)
+9. Arena Equipment & New Gear
+
+1. Weapons & Tools
+Crafted utility weapons and tools — not legendaries, but specialized gear with unique tradeoffs.
+Name	Type	Damage	Recipe
+Lumberjack's Axe	OneHandedWeapon	Slash 70, Chop 100	Forge Lv4: FineWood x8, BlackMetal x25, LinenThread x6
+Woodsman's Axe	OneHandedWeapon	Slash 14, Chop 50	Workbench Lv1: Wood x6, Flint x8, LeatherScraps x2
+Excavator's Pickaxe	TwoHandedWeapon	Pierce 30, Pickaxe 80	Forge Lv2: YggdrasilWood x4, BlackMetal x30
+Pathfinder's Pickaxe	TwoHandedWeapon	Pierce 9, Pickaxe 27	Workbench Lv1: Wood x4, Stone x14, HardAntler x1
+Journeyman's Hammer	Tool	—	Forge Lv1: Wood x6, Bronze x10
+Mastercraft Hammer	Tool	—	Forge Lv4: FineWood x6, BlackMetal x20, LinenThread x5
+Hunter's Arrow	Ammo	Pierce 18	Workbench Lv1: Wood x8, Flint x4, Feathers x4
+Bludgeon Arrow	Ammo	Blunt 34, Pierce 5	Forge Lv1: Wood x8, Bronze x3, Feathers x2
+Storm Arrow	Ammo	Pierce 18, Lightning 38	Forge Lv2: Wood x8, Iron x2, Coal x6, Feathers x2
+Wisp Arrow	Ammo	Pierce 38, Spirit 42	Blackforge Lv1: Wood x8, Mandible x4, Feathers x2
+
+Lumberjack's Axe: A black metal axe reforged with a single purpose, clearing whole forests in record time. Trades raw combat power for unmatched timber yield.
+Woodsman's Axe: A flint axe re-balanced from the ground up to fell trees fast. Bites deep into wood but bites less deep into flesh.
+Excavator's Pickaxe: A black metal pickaxe rebalanced into a mining juggernaut, shattering rock and ore veins with every swing.
+Pathfinder's Pickaxe: A crude stone pickaxe with a reinforced head, built for prospectors who need rock and ore broken fast.
+Journeyman's Hammer: A reinforced bronze-banded hammer. Holds a charge of durability so you can keep building longer between repairs.
+Mastercraft Hammer: A black metal hammer of exceptional make. Carries enormous durability reserves, letting you build for hours before it ever needs repair.
+Hunter's Arrow: A light, down-fletched flint arrow cut for silence rather than raw power. Flies almost soundlessly and punishes an unaware target severely.
+Bludgeon Arrow: A blunt, weighted bronze head built to crack bone rather than pierce hide. Excels against skeletal and armored foes that shrug off normal arrows.
+Storm Arrow: An iron arrowhead wound with charged wire. Crackles through wet, metal-armored, or grouped enemies that conduct the shock.
+Wisp Arrow: A Mistlands-forged arrow bound with mandible chitin and lingering spirit energy. A late-game alternative to silver for places thick with the undead.
+
+2. Legendary Weapons
+Drop-only weapons obtained from elite creatures. Not craftable.
+Meadows
+Name	Type	Damage	Special Effect
+Thornbite	OneHandedWeapon	Slash 60, Poison 15	Poisoned edge
+Stagsplitter	OneHandedWeapon	Slash 35, Chop 45	Bonus damage vs beasts
+Widow's Needle	OneHandedWeapon	Slash 12, Pierce 12	Massive backstab damage
+Boarspear	OneHandedWeapon	Pierce 35	Heavy knockback vs charging enemies
+
+Thornbite: A sword grown rather than forged. Briars pulse beneath the steel and tighten on every wound they open.
+Stagsplitter: An axe carved with antler motifs that never seem to dull. Beasts of the forest flee from its scent of old blood.
+Widow's Needle: A sliver of black iron so thin it barely exists until it's already inside you.
+Boarspear: A hunting spear tipped with a tusk that never stopped growing. It remembers the charge.
+Black Forest
+Name	Type	Damage	Special Effect
+Warchief's Cleaver	OneHandedWeapon	Slash 50, Chop 55	Chain damage ramps with consecutive hits
+Greydwarf Fang	OneHandedWeapon	Slash 22, Pierce 22, Poison 20	Stacking poison on hit
+Coresplitter	OneHandedWeapon	Blunt 65	Shreds target armor on hit
+Rootbinder	OneHandedWeapon	Pierce 55	Briefly roots target on hit
+
+Warchief's Cleaver: Taken from a Greydwarf chieftain who never lost a fight, until he did. Each swing remembers the last.
+Greydwarf Fang: Root and bark fused into a blade still weeping sap. The wound it leaves keeps bleeding green.
+Coresplitter: A mace made from the petrified heart of an ancient root. It shatters more than bone.
+Rootbinder: A spear that never fully leaves the earth it was pulled from. Vines still cling to the shaft.
+Swamp
+Name	Type	Damage	Special Effect
+Mireheart	TwoHandedWeapon	Pierce 70, Poison 25	Heals you on hits vs poisoned targets
+Draugr's Lament	OneHandedWeapon	Slash 80	Lifesteal on hit
+Bog Reaper	TwoHandedWeapon	Slash 20, Pierce 85	Bonus damage vs undead
+Plaguebringer	Bow	Pierce 20, Poison 30	Arrows apply stacking poison
+
+Mireheart: An atgeir pulled from a drowned shrine, its blade still slick with bog-poison that never washes off.
+Draugr's Lament: A blade carried by something that should not still be carrying it. It drinks before you do.
+Bog Reaper: A two-handed blade wrapped in funeral cloth, swung by something that no longer needs to breathe.
+Plaguebringer: A bow strung with sinew from something that died of rot rather than violence. Every arrow carries the sickness forward.
+Mountain
+Name	Type	Damage	Special Effect
+Frostfang Maul	TwoHandedWeapon	Blunt 95, Frost 35	Chance to freeze target, bonus damage vs frozen
+Wolfsbane	OneHandedWeapon	Pierce 90, Frost 20	Bonus damage vs wolves, frost on hit
+Stormcaller	OneHandedWeapon	Slash 110, Chop 70, Lightning 25	Chance to chain lightning to nearby enemies on crit
+Avalanche	TwoHandedWeapon	Slash 120, Chop 80	Knockback radius on heavy swing
+
+Frostfang Maul: A mace cast from glacier-iron, cold enough to numb the swing before it lands.
+Wolfsbane: A spear carved from wolf-bone and tipped with mountain frost. Pack hunters give it a wide berth.
+Stormcaller: An axe forged in a thunderstorm that never quite ended. Lightning still arcs between the haft and the head.
+Avalanche: A greataxe so heavy that swinging it sounds like a mountain giving way.
+Plains
+Name	Type	Damage	Special Effect
+Sunspear	OneHandedWeapon	Pierce 95, Fire 30	Ignites target on hit, bonus vs Fuling
+Goldmane	OneHandedWeapon	Slash 90, Spirit 35	Bonus damage while at full health
+Deathweaver	Bow	Pierce 55	Arrows pierce through multiple targets
+Warlord's Bulwark	OneHandedWeapon	Blunt 80, Spirit 25	High block power with strong stagger and parry window
+
+Sunspear: A Fuling war-spear, its head still glowing like it was pulled from the forge an hour ago.
+Goldmane: A radiant sword that grows brighter the less damage you've taken. It rewards the untouched.
+Deathweaver: A black-limbed bow strung with woven gold. The arrows it looses rarely stop at one target.
+Warlord's Bulwark: A heavy mace mounted with a Fuling warlord's banner, equally suited to crushing skulls and stopping blades.
+Mistlands
+Name	Type	Damage	Special Effect
+Voidfang	OneHandedWeapon	Slash 40, Pierce 40	Massive backstab multiplier, brief stealth on kill
+Mistveil	TwoHandedWeapon	Frost 55	Eitr-cost attack that pierces fog visibility
+Seeker's Edge	OneHandedWeapon	Slash 100, Frost 30	Cleave damage, bonus vs insectoid swarms
+Gjall's Roar	TwoHandedWeapon	Pierce 105, Lightning 35	AoE knockback nova on secondary attack
+
+Voidfang: A blade cut from black chitin that seems to swallow the mist around it. It was made for one perfect strike.
+Mistveil: A staff topped with a crystal that always seems to know where the mist is thinnest.
+Seeker's Edge: A blade grown from chitin plating, still faintly warm as if recently part of something alive.
+Gjall's Roar: An atgeir resonant with the same low droning hum that precedes a Gjall's bombardment.
+Ashlands / Deep North
+Name	Type	Damage	Special Effect
+Cinderfall	TwoHandedWeapon	Slash 160, Fire 40	Fire AoE on heavy attack
+Frostbreaker	TwoHandedWeapon	Blunt 150, Frost 40	Frost nova on kill, bonus vs fire-resistant enemies
+Ashclaw	OneHandedWeapon	Slash 45, Pierce 45, Fire 20	Fast attack speed, stacking fire damage
+
+Cinderfall: A greatsword forged in lava and quenched in nothing. The cracks along the blade never stop glowing.
+Frostbreaker: A Deep North mace that radiates cold even at rest. Enemies it fells freeze solid before they hit the ground.
+Ashclaw: A pair of soot-black blades that never seem to fully cool. They cut fast, and they cut hot.
+
+3. Armor Sets
+Warlord & Outrider — Bronze
+Name	Slot	Armor	Recipe
+Warlord's Bronze Helm	Helmet	12 (+3/lvl)	Forge Lv1: Bronze x9, DeerHide x3, Crystal x5
+Warlord's Bronze Chest	Chest	12 (+3/lvl)	Forge Lv1: Bronze x9, DeerHide x3, Crystal x5
+Warlord's Bronze Legs	Legs	12 (+3/lvl)	Forge Lv1: Bronze x9, DeerHide x3, Crystal x5
+Outrider's Bronze Helm	Helmet	7 (+2/lvl)	Forge Lv1: Bronze x7, DeerHide x2, Crystal x3
+Outrider's Bronze Chest	Chest	7 (+2/lvl)	Forge Lv1: Bronze x7, DeerHide x2, Crystal x3
+Outrider's Bronze Legs	Legs	7 (+2/lvl)	Forge Lv1: Bronze x7, DeerHide x2, Crystal x3
+
+Warlord & Outrider — Iron
+Name	Slot	Armor	Recipe
+Warlord's Iron Helm	Helmet	20 (+3/lvl)	Forge Lv2: Iron x35, DeerHide x3, WitheredBone x6
+Warlord's Iron Chest	Chest	20 (+3/lvl)	Forge Lv2: Iron x35, DeerHide x3, WitheredBone x6
+Warlord's Iron Legs	Legs	20 (+3/lvl)	Forge Lv2: Iron x35, DeerHide x3, WitheredBone x6
+Outrider's Iron Helm	Helmet	12 (+2/lvl)	Forge Lv2: Iron x28, DeerHide x2, WitheredBone x4
+Outrider's Iron Chest	Chest	12 (+2/lvl)	Forge Lv2: Iron x28, DeerHide x2, WitheredBone x4
+Outrider's Iron Legs	Legs	12 (+2/lvl)	Forge Lv2: Iron x28, DeerHide x2, WitheredBone x4
+
+Warlord & Outrider — Wolf
+Name	Slot	Armor	Recipe
+Warlord's Wolf Chest	Chest	28 (+3/lvl)	Forge Lv3: Silver x38, WolfPelt x10, Chain x2, TrophyWolf x2
+Warlord's Wolf Legs	Legs	28 (+3/lvl)	Forge Lv3: Silver x38, WolfPelt x10, WolfFang x8, TrophyWolf x2
+Outrider's Wolf Chest	Chest	17 (+2/lvl)	Forge Lv3: Silver x30, WolfPelt x7, Chain x1, TrophyWolf x1
+Outrider's Wolf Legs	Legs	17 (+2/lvl)	Forge Lv3: Silver x30, WolfPelt x7, WolfFang x6, TrophyWolf x1
+
+
+4. Capes
+Name	Armor	Recipe
+Warlord's Wolf Cape	2 (+1/lvl)	Workbench Lv3: WolfPelt x10, Silver x8, TrophyWolf x2
+Outrider's Wolf Cape	1 (+1/lvl)	Workbench Lv3: WolfPelt x7, Silver x6, TrophyWolf x1
+Cape of the Wayfarer	3 (+1/lvl)	Workbench Lv2: LeatherScraps x6, DeerHide x4, Feathers x10, GreydwarfEye x10
+Drakeskin Cloak	8 (+2/lvl)	Forge Lv3: ScaleHide x10, DragonTear x2, Silver x10, LinenThread x5
+Mistwalker's Shroud	10 (+2/lvl)	Forge Lv4: Carapace x10, Eitr x5, Softtissue x8
+
+Warlord's Wolf Cape: A heavy double-pelt mantle clasped in silver. Turns the mountain wind and the cold both, at the cost of grace.
+Outrider's Wolf Cape: A single wolf pelt cut close to the shoulders. Keeps the cold off without slowing the stride.
+Cape of the Wayfarer: A traveler's cloak stitched from deer hide and a hundred greydwarf eyes for luck. Light as a breeze, and it shows in your stride.
+Drakeskin Cloak: Scaled hide and silvered thread bound around a sliver of dragon tear. Shrugs off both the mountain's frost and the lowland's flame.
+Mistwalker's Shroud: Carapace plating ground thin and bound with eitr-soaked thread. Wraps the wearer in a hush that even the dead seem to respect.
+
+5. Belts
+Utility belts offering passive bonuses tailored to combat styles and playstyles.
+Name	Focus	Recipe
+Guardian's Belt	Bronze-tier hybrid	Workbench Lv1: LeatherScraps x8, Wood x4
+Fledgling Archer's Belt	Early bow support	Workbench Lv1: LeatherScraps x6, DeerHide x2
+Duelist's Belt	Early sword support	Workbench Lv1: LeatherScraps x6, DeerHide x2
+Blademaster's Belt	Bronze sword support	Forge Lv3: LeatherScraps x8, Bronze x4, LinenThread x2
+Marksman's Belt	Bronze bow support	Forge Lv3: LeatherScraps x8, Bronze x4, Feathers x4
+Bulwark Belt	Iron-tier defense	Forge Lv3: Iron x6, TrollHide x4
+Aegis Belt	Mistlands defense	Blackforge Lv2: BlackMetal x8, Carapace x6
+Sharpshooter's Belt	Black Metal bow support	Blackforge Lv1: BlackMetal x6, LinenThread x4, Silver x4
+Swordsaint's Belt	Black Metal sword support	Blackforge Lv1: BlackMetal x6, LinenThread x4, Silver x4
+
+Guardian's Belt: A thick band of boiled leather buckled tight. Lightens the burden of holding a shield steady.
+Fledgling Archer's Belt: A simple leather cord strung with fletching scraps. Steadies the draw of a novice bowman.
+Duelist's Belt: A trim leather strap favored by blade-hands. Quickens the wrist and sharpens the lunge.
+Blademaster's Belt: Bronze-studded leather worn smooth by years of swordplay. Every cut lands truer.
+Marksman's Belt: Reinforced with bronze rivets and a steady hand's worth of practice. Sharpens aim at range.
+Bulwark Belt: Iron plates riveted over hardened hide. Turns aside the stagger of a heavy blow.
+Aegis Belt: Mistlands carapace plating fused to black metal. The mark of a wall that does not fall.
+Sharpshooter's Belt: Black metal clasps and silver wire honed to a killer's instinct. Worn by hunters who never miss.
+Swordsaint's Belt: Black metal and silver thread bound in a master's sash. A blade-arm's final upgrade.
+
+6. Potions
+Brewed elixirs offering temporary boosts for skills and resource gathering.
+Name	Effect	Recipe
+Potion of the Woodsman	Boosts woodcutting effectiveness	Cauldron Lv1: Mushroom x8, Resin x6, Honey x1
+Potion of the Prospector	Boosts ore/mining detection	Cauldron Lv1: Mushroom x8, Coal x4, Honey x1
+Veteran's Potion	Combat tonic before a hard fight	Forge Lv2: MushroomYellow x6, Iron x3, Honey x2
+Adept's Elixir	Quickens all skills at once	Blackforge Lv2: Mandible x4, BlackMetal x3, Honey x3
+
+Potion of the Woodsman: A bitter draught of pine resin and mushroom. Sharpens the eye for a true swing of the axe.
+Potion of the Prospector: Ground stone dust steeped in spring water. Lets you feel the seams of ore through the rock.
+Veteran's Potion: Iron shavings dissolved in bitter mead. A combat tonic favored by seasoned raiders before a hard fight.
+Adept's Elixir: A shimmering Mistlands brew distilled from mandible dust and black metal filings. Quickens every skill at once.
+
+7. Food & Cooking
+Early-Game Dishes
+Name	Recipe
+Forager's Porridge	Cauldron Lv1: Raspberry x4, Honey x1, Dandelion x2
+Hearty Mushroom Skewer	Cauldron Lv1: NeckTail x1, Mushroom x2
+Resin-Glazed Boar Ribs	Cauldron Lv2: RawMeat x2, Resin x3, Honey x1
+Deer Hunter's Stew	Cauldron Lv1: DeerMeat x2, Carrot x2, Onion x1
+
+Forager's Porridge: Boiled oats sweetened with wild honey and whatever berries were in reach. Simple, filling, and easy on a thin pantry.
+Hearty Mushroom Skewer: Neck meat and forest mushrooms charred on a stick over open flame. No pot required, just a fire and a little patience.
+Resin-Glazed Boar Ribs: Boar ribs basted in a sticky amber glaze. An old trick that surprisingly works, and tastes better than it sounds.
+Deer Hunter's Stew: A thick stew of fresh venison and root vegetables. The first proper meal most survivors learn to make.
+Honey-Themed Dishes
+Name	Recipe
+Honey Bread	Preptable Lv1: BarleyFlour x10, Honey x3
+Honey-Glazed Boar Skewer	Cauldron Lv2: RawMeat x2, Honey x2, Thistle x1
+Honey Mead Stew	Cauldron Lv2: CookedDeerMeat x1, Honey x3, Carrot x1
+Honeycomb Trail Mix	Preptable Lv1: Blueberries x6, Honey x1
+Honeyed Raspberries	Preptable Lv1: Raspberry x6, Honey x2
+Spiced Honey Cake	Cauldron Lv3: BarleyFlour x6, Honey x4, Blueberries x4, MushroomMagecap x1
+
+Honey Bread: A dense loaf brushed with honey before baking. Keeps your arms working the hammer and hoe long after plain bread would have you winded.
+Honey-Glazed Boar Skewer: Tender boar meat basted in honey and roasted over open flame. Built for those who fight toe-to-toe and never break stride.
+Honey Mead Stew: A warm broth laced with mead-honey and root vegetables. Quickens the flow of Eitr through tired limbs.
+Honeycomb Trail Mix: Dried blueberries and crushed honeycomb pressed into a travel bar. Light fare for long, quiet treks.
+Honeyed Raspberries: Wild raspberries steeped in fresh honey. A quick, sweet bite that keeps your legs and arms fresh for longer.
+Spiced Honey Cake: A dense, spiced cake soaked in honey and baked slow. The finest dessert a kitchen can offer, fit for any adventure.
+Fisherman's Line
+Name	Recipe
+Anglers' Chowder	Cauldron Lv2: FishCooked x3, Onion x2, Honey x1
+Deep Sea Bisque	Cauldron Lv4: FishAnglerRaw x1, MushroomMagecap x1, Carrot x2
+Fisherman's Feast	Cauldron Lv5: Fish1 x1, Fish2 x1, Fish3 x1, Fish4_cave x1, Fish5 x1, Fish6 x1, Fish7 x1, Fish8 x1, Fish9 x1, Fish10 x1, Fish11 x1, Fish12 x1, FishAnglerRaw x1, Honey x3
+Roe Tart	Cauldron Lv3: Fish2 x2, Fish6 x2, Fish9 x2, BarleyFlour x2
+Smoked Catch Platter	Cauldron Lv3: Fish1 x1, Fish5 x1, Fish8 x1, Honey x2
+
+Anglers' Chowder: A creamy harborside stew thick with the day's catch. Every spoonful tastes like a morning spent waiting on a line.
+Deep Sea Bisque: Anglerfish flesh rendered down with mushroom and mist-water. The lure organ still glows faintly in the broth.
+Fisherman's Feast: Every fish Valheim has to offer, laid out on one platter. Only someone who has fished every water in the world could set this table.
+Roe Tart: A delicate pastry packed with cured roe from a dozen different catches. Rich, salty, and gone in three bites.
+Smoked Catch Platter: Three different fish, smoked low and slow over alder wood. A proper spread for someone who never leaves the water empty-handed.
+
+8. Elite & New Creatures
+Every custom creature added via MonsterDB, with biome, stats, and full drop tables — including world-spawning creatures and arena-exclusive bosses.
+World-Spawning Creatures
+Creatures that spawn naturally across the world's biomes.
+Ash Walker
+Cloned from: Draugr  |  Biome: AshLands  |  Health: 600  |  Spawn chance: 10%
+Drop	Amount	Chance
+Ashcurse	1-1	4%
+SurtlingCore	1-2	70%
+BoneFragments	2-4	Guaranteed
+
+Ashclaw Twitcher
+Cloned from: Charred_Twitcher  |  Biome: AshLands  |  Health: 200  |  Spawn chance: 12%
+Drop	Amount	Chance
+CharredBone	1-3	Guaranteed
+Ashclaw	1-1	6%
+
+Bog Skeleton
+Cloned from: Skeleton_Poison  |  Biome: Swamp  |  Health: 180  |  Spawn chance: 12%
+Drop	Amount	Chance
+BoneFragments	2-4	Guaranteed
+Ooze	1-2	50%
+BogReaper	1-1	6%
+
+Cursed Archer
+Cloned from: SkeletonArcher  |  Biome: Swamp  |  Health: 300  |  Spawn chance: 10%
+Drop	Amount	Chance
+Wolfsbane	1-1	3%
+Feathers	3-6	80%
+BoneFragments	2-4	Guaranteed
+
+Direwolf
+Cloned from: Wolf  |  Biome: Mountain  |  Health: 500  |  Spawn chance: 6%
+Drop	Amount	Chance
+WolfPelt	4-6	Guaranteed
+WolfFang	2-4	85%
+WolfMeat	3-5	Guaranteed
+FrostfangMaul	1-1	3%
+
+Draugr Archer Captain
+Cloned from: Draugr_Ranged  |  Biome: Swamp  |  Health: 160  |  Spawn chance: 12%
+Drop	Amount	Chance
+Entrails	1-2	Guaranteed
+DraugrsLament	1-1	6%
+
+Draugr Revenant
+Cloned from: Draugr_Elite  |  Biome: Swamp  |  Health: 280  |  Spawn chance: 12%
+Drop	Amount	Chance
+Entrails	1-3	Guaranteed
+IronScrap	1-2	30%
+Mireheart	1-1	4%
+
+Elite Bear
+Cloned from: Bjorn  |  Biome: Meadows  |  Health: 500  |  Spawn chance: 10%
+Drop	Amount	Chance
+BjornHide	2-4	Guaranteed
+BlackBearMeat	2-3	Guaranteed
+BjornPaw	1-2	Guaranteed
+Thornbite	1-1	5%
+
+Elite Boar
+Cloned from: Boar  |  Biome: Meadows  |  Health: 100  |  Spawn chance: 15%
+Drop	Amount	Chance
+RawMeat	1-3	Guaranteed
+Boarspear	1-1	6%
+
+Elite Neck
+Cloned from: Neck  |  Biome: Meadows  |  Health: 60  |  Spawn chance: 15%
+Drop	Amount	Chance
+NeckTail	1-2	Guaranteed
+WidowsNeedle	1-1	7%
+
+Elite Stag
+Cloned from: Deer  |  Biome: Meadows  |  Health: 80  |  Spawn chance: 15%
+Drop	Amount	Chance
+DeerHide	2-3	Guaranteed
+DeerMeat	1-2	Guaranteed
+Stagsplitter	1-1	6%
+
+Ember Jarl
+Cloned from: Charred_Melee  |  Biome: AshLands  |  Health: 400  |  Spawn chance: 10%
+Drop	Amount	Chance
+CharredBone	2-4	Guaranteed
+Flametal	1-2	30%
+Cinderfall	1-1	4%
+CinderHeart	1-1	25%
+
+Forest Flyer
+Cloned from: Seeker  |  Biome: BlackForest  |  Health: 90  |  Spawn chance: 20%
+Drop	Amount	Chance
+Resin	1-2	Guaranteed
+GreydwarfEye	1-1	30%
+
+Frost Giant
+Cloned from: Troll  |  Biome: DeepNorth  |  Health: 3500  |  Spawn chance: 5%
+Drop	Amount	Chance
+TrollHide	3-6	Guaranteed
+FreezeGland	2-4	80%
+EssenceDeepNorth	1-2	40%
+
+Frost Risen
+Cloned from: DraugrFem  |  Biome: Mountain  |  Health: 500  |  Spawn chance: 9%
+Drop	Amount	Chance
+FrostfangMaul	1-1	4%
+FreezeGland	1-2	70%
+BoneFragments	2-4	Guaranteed
+
+Frostfang Alpha
+Cloned from: Wolf  |  Biome: Mountain  |  Health: 260  |  Spawn chance: 12%
+Drop	Amount	Chance
+WolfPelt	2-3	Guaranteed
+WolfFang	1-2	70%
+WolfMeat	1-2	Guaranteed
+FrostfangMaul	1-1	4%
+
+Fuling Deadeye
+Cloned from: GoblinArcher  |  Biome: Plains  |  Health: 140  |  Spawn chance: 12%
+Drop	Amount	Chance
+Needle	1-1	30%
+Deathweaver	1-1	6%
+
+Fuling Shaman Elder
+Cloned from: GoblinShaman  |  Biome: Plains  |  Health: 160  |  Spawn chance: 12%
+Drop	Amount	Chance
+Needle	1-1	30%
+Goldmane	1-1	6%
+
+Fuling Warlord
+Cloned from: GoblinBrute  |  Biome: Plains  |  Health: 320  |  Spawn chance: 10%
+Drop	Amount	Chance
+Needle	1-1	30%
+Coins	20-40	Guaranteed
+Sunspear	1-1	4%
+
+Giant Draugr
+Cloned from: Draugr_Elite  |  Biome: Swamp  |  Health: 1000  |  Spawn chance: 15%
+Drop	Amount	Chance
+Entrails	2-5	Guaranteed
+IronScrap	2-4	50%
+WitheredBone	1-2	25%
+
+Giant Tick
+Cloned from: Tick  |  Biome: Mistlands  |  Health: 130  |  Spawn chance: 12%
+Drop	Amount	Chance
+Carapace	1-2	Guaranteed
+SeekersEdge	1-1	6%
+
+Grave Guard
+Cloned from: DraugrElite  |  Biome: Swamp  |  Health: 800  |  Spawn chance: 10%
+Drop	Amount	Chance
+Soulbreaker	1-1	4%
+BlackMetal	1-3	80%
+BoneFragments	2-5	Guaranteed
+
+Greydwarf Shaman Elite
+Cloned from: Greydwarf_Shaman  |  Biome: BlackForest  |  Health: 150  |  Spawn chance: 12%
+Drop	Amount	Chance
+Wood	2-5	Guaranteed
+GreydwarfEye	1-2	50%
+GreydwarfFang	1-1	5%
+
+Greydwarf Warchief
+Cloned from: Greydwarf_Elite  |  Biome: BlackForest  |  Health: 240  |  Spawn chance: 12%
+Drop	Amount	Chance
+Wood	4-8	Guaranteed
+GreydwarfEye	1-2	60%
+WarchiefsCleaver	1-1	5%
+
+Greyling Elder
+Cloned from: Greyling  |  Biome: BlackForest  |  Health: 90  |  Spawn chance: 15%
+Drop	Amount	Chance
+Wood	1-3	Guaranteed
+Rootbinder	1-1	6%
+
+Icefang
+Cloned from: Ulv  |  Biome: DeepNorth  |  Health: 700  |  Spawn chance: 12%
+Drop	Amount	Chance
+WolfPelt	1-2	Guaranteed
+WolfFang	1-2	70%
+FreezeGland	1-2	50%
+
+King Serpent
+Cloned from: Serpent  |  Biome: Ocean  |  Health: 1900  |  Spawn chance: 8%
+Drop	Amount	Chance
+SerpentMeat	4-7	Guaranteed
+SerpentScale	4-7	Guaranteed
+Coins	30-60	Guaranteed
+Silver	2-4	30%
+
+Mire Abomination
+Cloned from: Abomination  |  Biome: Swamp  |  Health: 700  |  Spawn chance: 8%
+Drop	Amount	Chance
+Ooze	2-4	Guaranteed
+Wood	4-8	Guaranteed
+Plaguebringer	1-1	5%
+
+Mire Bear
+Cloned from: Bjorn  |  Biome: Swamp  |  Health: 450  |  Spawn chance: 15%
+Drop	Amount	Chance
+BjornHide	2-4	Guaranteed
+Ooze	2-4	Guaranteed
+Iron	1-2	25%
+BjornPaw	1-2	40%
+
+Mist Stalker
+Cloned from: Seeker  |  Biome: Mistlands  |  Health: 220  |  Spawn chance: 12%
+Drop	Amount	Chance
+Carapace	1-3	Guaranteed
+Mistveil	1-1	5%
+
+Mosquito
+Cloned from: Deathsquito  |  Biome: BlackForest  |  Health: 8  |  Spawn chance: 20%
+Drop	Amount	Chance
+Ooze	1-1	20%
+
+Permafrost Golem
+Cloned from: StoneGolem  |  Biome: DeepNorth  |  Health: 2500  |  Spawn chance: 6%
+Drop	Amount	Chance
+Stone	5-10	Guaranteed
+Crystal	2-4	90%
+FreezeGland	2-3	60%
+EssenceDeepNorth	1-2	30%
+
+Plague Shroud
+Cloned from: Draugr  |  Biome: Swamp  |  Health: 450  |  Spawn chance: 9%
+Drop	Amount	Chance
+Veinripper	1-1	3%
+Ooze	2-4	80%
+BoneFragments	2-4	Guaranteed
+
+Plains Lox Alpha
+Cloned from: Lox  |  Biome: Plains  |  Health: 1300  |  Spawn chance: 8%
+Drop	Amount	Chance
+LoxPelt	2-4	Guaranteed
+LoxMeat	2-4	Guaranteed
+WarlordsBulwark	1-1	5%
+
+Polar Bear
+Cloned from: Bjorn  |  Biome: Mountain  |  Health: 400  |  Spawn chance: 20%
+Drop	Amount	Chance
+BjornHide	2-3	Guaranteed
+PolarBearMeat	1-2	Guaranteed
+FreezeGland	1-2	40%
+BjornPaw	1-2	40%
+
+Red Troll
+Cloned from: Troll  |  Biome: BlackForest  |  Health: 1600  |  Spawn chance: 4%
+Drop	Amount	Chance
+TrollHide	5-8	Guaranteed
+Coins	40-80	Guaranteed
+Wood	10-20	Guaranteed
+
+Rimcaller
+Cloned from: Bat  |  Biome: DeepNorth  |  Health: 280  |  Spawn chance: 10%
+Drop	Amount	Chance
+LeatherScraps	1-2	80%
+FreezeGland	1-1	40%
+
+Rime Wraith
+Cloned from: Fenring  |  Biome: DeepNorth  |  Health: 400  |  Spawn chance: 10%
+Drop	Amount	Chance
+WolfFang	1-2	Guaranteed
+LinenThread	1-2	30%
+Frostbreaker	1-1	5%
+FrostMarrow	1-1	25%
+
+Rockslide Golem
+Cloned from: StoneGolem  |  Biome: Mountain  |  Health: 900  |  Spawn chance: 8%
+Drop	Amount	Chance
+Stone	4-8	Guaranteed
+Avalanche	1-1	5%
+
+Seeker Matriarch
+Cloned from: SeekerBrute  |  Biome: Mistlands  |  Health: 3600  |  Spawn chance: 10%
+Drop	Amount	Chance
+Carapace	2-4	Guaranteed
+BugMeat	1-1	40%
+Voidfang	1-1	4%
+VoidIchor	1-1	25%
+
+Skeleton Champion
+Cloned from: Skeleton  |  Biome: BlackForest  |  Health: 180  |  Spawn chance: 12%
+Drop	Amount	Chance
+BoneFragments	2-4	Guaranteed
+Coresplitter	1-1	6%
+
+Snow Troll
+Cloned from: Troll  |  Biome: Mountain  |  Health: 1500  |  Spawn chance: 6%
+Drop	Amount	Chance
+TrollHide	5-8	Guaranteed
+Coins	30-60	Guaranteed
+FreezeGland	1-2	40%
+
+Stalker
+Cloned from: Wolf  |  Biome: BlackForest  |  Health: 50  |  Spawn chance: 20%
+Drop	Amount	Chance
+WolfPelt	1-2	Guaranteed
+WolfFang	1-2	50%
+StalkerMeat	1-2	Guaranteed
+
+Storm Volture
+Cloned from: Volture  |  Biome: Mountain  |  Health: 150  |  Spawn chance: 12%
+Drop	Amount	Chance
+VoltureMeat	2-4	Guaranteed
+Stormcaller	1-1	5%
+StormCore	1-1	25%
+
+Ulv Packleader
+Cloned from: Ulv  |  Biome: Mountain  |  Health: 280  |  Spawn chance: 12%
+Drop	Amount	Chance
+WolfPelt	2-3	Guaranteed
+WolfFang	1-2	50%
+Wolfsbane	1-1	5%
+
+Void Stalker
+Cloned from: Skeleton  |  Biome: Mistlands  |  Health: 400  |  Spawn chance: 11%
+Drop	Amount	Chance
+Voidfang	1-1	3%
+Ooze	1-2	60%
+BoneFragments	2-5	Guaranteed
+
+Wintermane
+Cloned from: Bjorn  |  Biome: DeepNorth  |  Health: 20000  |  Spawn chance: 8%
+Drop	Amount	Chance
+BjornHide	8-12	Guaranteed
+FreezeGland	5-8	Guaranteed
+BjornPaw	3-5	Guaranteed
+EssenceDeepNorth	3-5	Guaranteed
+
+Young Gjall
+Cloned from: Gjall  |  Biome: Mistlands  |  Health: 500  |  Spawn chance: 10%
+Drop	Amount	Chance
+Carapace	2-4	Guaranteed
+GjallsRoar	1-1	5%
+
+Arena-Exclusive Creatures
+Bosses and champions found only within the Champion's Arena — they do not spawn naturally in the world. Reward ArenaToken on defeat, used to purchase gear at the Champion's Vault.
+Arena Warden
+Cloned from: Troll  |  Faction: ForestMonsters  |  Health: 10000  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+ArenaToken	2-4	Guaranteed
+TrollHide	2-4	Guaranteed
+
+Ashbound
+Cloned from: Fuling  |  Faction: ForestMonsters  |  Health: 4000  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+ArenaToken	1-3	80%
+BlackMetalScrap	1-3	90%
+
+Fallen Champion
+Cloned from: Bjorn  |  Faction: ForestMonsters  |  Health: 50000  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+ArenaToken	15-15	Guaranteed
+Flametal	3-6	Guaranteed
+
+Ironclad
+Cloned from: StoneGolem  |  Faction: ForestMonsters  |  Health: 12000  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+ArenaToken	3-6	Guaranteed
+Iron	2-4	80%
+
+Pitrunner
+Cloned from: Fenring  |  Faction: ForestMonsters  |  Health: 3000  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+ArenaToken	1-2	70%
+WolfPelt	1-2	80%
+
+Plaguecaller
+Cloned from: GoblinShaman  |  Faction: ForestMonsters  |  Health: 8000  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+ArenaToken	3-6	Guaranteed
+Ooze	2-4	90%
+
+Scuttler
+Cloned from: Seeker  |  Faction: ForestMonsters  |  Health: 6000  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+ArenaToken	2-4	Guaranteed
+Carapace	2-4	90%
+
+Shade
+Cloned from: Draugr_Elite  |  Faction: Undead  |  Health: 350  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+Entrails	1-2	Guaranteed
+IronScrap	1-2	20%
+
+Stormfiend
+Cloned from: Gjall  |  Faction: ForestMonsters  |  Health: 10000  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+ArenaToken	5-10	Guaranteed
+Carapace	2-4	80%
+
+The Ravager
+Cloned from: GoblinKing  |  Faction: ForestMonsters  |  Health: 16000  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+ArenaToken	5-10	Guaranteed
+BlackMetal	2-5	90%
+
+The Titan
+Cloned from: Troll  |  Faction: ForestMonsters  |  Health: 24000  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+ArenaToken	8-15	Guaranteed
+TrollHide	3-6	Guaranteed
+
+Voidhowl
+Cloned from: Ulv  |  Faction: ForestMonsters  |  Health: 5000  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+ArenaToken	1-3	80%
+WolfPelt	1-2	70%
+
+Wrathborn
+Cloned from: FulingBerserker  |  Faction: ForestMonsters  |  Health: 8000  |  Arena-exclusive (no natural world spawn)
+Drop	Amount	Chance
+ArenaToken	3-6	Guaranteed
+BlackMetalScrap	2-4	90%
+
+9. Arena Equipment & New Gear
+Magic stones, new craftable weapons, and Champion's Vault arena reward items added alongside the arena and elite creature roster.
+Name	Type	Damage/Stats	Recipe
+Ice Blocker Stone	Throwable	Frost 40, spawns blocking ice pillar, 100% Frost	Arena reward — not craftable
+Meteor Stone	Throwable	Fire 80, calls down meteor strike, 100% Burning	Arena reward — not craftable
+Splinter Volley Stone	Throwable	Pierce 35, 5-spear burst volley	Arena reward — not craftable
+Rootcaller Stone	Throwable	Poison 45, Slash 15, 2 root projectiles, snare	Arena reward — not craftable
+Tarblast Stone	Throwable	Blunt 5, Poison 20, spreading tar field, 100% Tar	Arena reward — not craftable
+Charfire Stone	Throwable	Fire 80, triple-burst explosion, 100% Burning	Arena reward — not craftable
+Rootpiercer	OneHandedWeapon (Spear)	Pierce 70, Poison 25 (+6/+3 per lvl)	Artisan Station Lv1: Carapace x20, Chitin x8, TrophySeeker x3, BlackMetal x6
+Stormcaller's Staff	TwoHandedWeapon (Elemental Magic)	Fire 20, Lightning 60 (+2/+6 per lvl)	Mage Table Lv2: Flametal x14, TrophyFader x1, BlackMetal x10, SurtlingCore x6
+Splinterbolt	TwoHandedWeapon (Crossbow)	Pierce 90 (+8 per lvl)	Blackforge Lv2: BlackMetal x20, Carapace x14, Flametal x6, TrophySeeker x4
+Lavabore	TwoHandedWeapon (Polearm)	Slash 55, Pierce 30, Fire 35	Blackforge Lv2: Flametal x18, BlackMetal x12, TrophySurtling x6, SurtlingCore x4
+Colloseum Edge	OneHandedWeapon (Sword)	Slash 80 (+7/lvl), Lightning 45 (+4/lvl)	Champion's Vault Lv1: ArenaToken x120, BlackMetal x20, Flametal x8
+Pit Crown	Helmet	Armor 20 (+3/lvl), EitrRegen +30%	Champion's Vault Lv1: ArenaToken x80, Flametal x10, Carapace x20
+Titan's Cudgel	TwoHandedWeapon (Club)	Blunt 130 (+12/lvl), Spirit 30 (+3/lvl)	Champion's Vault Lv1: ArenaToken x150, BlackMetal x25, TrollHide x10, Flametal x12
+Arena Token	Material	Currency — no combat stats	Earned from defeating arena creatures, not crafted
+
+Ice Blocker Stone: Hurled to slam a wall of ice into an enemy's path, freezing them in place and stalling a charge.
+Meteor Stone: A fragment of burning Ashlands rock — throw it skyward and call down fire from above.
+Splinter Volley Stone: Shatters into a volley of bone-white spear shards on impact, raking everything nearby.
+Rootcaller Stone: Swamp-grown and hungry — calls writhing roots up from the earth to snare and poison.
+Tarblast Stone: Spatters a field of burning tar across the ground, slowing anything that wades through it.
+Charfire Stone: A volatile Ashlands charge that detonates in three successive bursts of flame.
+Rootpiercer: A chitin-tipped spear laced with swamp poison, equally deadly thrown or thrust.
+Stormcaller's Staff: An elemental focus distinct from the legendary Stormcaller axe — channels fire and chained lightning through a Mage Table-forged core.
+Splinterbolt: A black metal arbalest reworked to fire either a single armor-piercing bolt or a five-bolt burst salvo.
+Lavabore: An Ashlands-forged polearm that flings molten rock with every strike, scorching anything in its sweep.
+Colloseum Edge: Forged in the Champion's Vault from arena spoils, crackling with stored lightning from a hundred fights.
+Pit Crown: A trophy helm awarded to arena champions, ringed with regenerative Eitr-infused gold.
+Titan's Cudgel: A monstrous two-handed club built from Champion's Vault rewards, swung by only the strongest victors.
+Arena Token: Proof of a kill within the Champion's Arena — the only currency the Vault keeper accepts.
